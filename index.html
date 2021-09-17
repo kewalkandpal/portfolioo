@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <!------------------Navbar------------------->
+
+    <nav>
+        <div class="logo"><a href="#">kewal kandpal</a></div>
+        <i onclick="change()" class="fas fa-sun" id="day_night" title="light mood"></i>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="toggel_nav_btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!---------------------Landing page----------------------->
+
+    <div class="container" id="home">
+        <div class="row landing">
+            <div class="col-lg-6 col-md-6 col-12 landContain">
+                <div class="lining">
+                    <h2 class="hey">hey</h2>
+                    <span class="line"></span>
+                </div>
+                <h1 class="myName">i'm kewal ! </h1>
+                <p class="profession"> < front end dev /> </p>
+                <div class="hire">
+                    <button class="btn"><a href="data/resume.pdf" download target="blank">get cv</a></button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 landImg">
+                <img src="image/landImg.jpg" alt="landImg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!---------------------About--------------------------->
+
+    <div class="container aboutPage" id="about">
+        <div class="about">
+            <h1 class="aboutHeading">About</h1>
+            <div class="underLine"></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center"> 
+                <div class="aboutImg mt-5">
+                    <img src="image/myimg.jpeg" alt="myImg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center">
+                <div class="aboutContent mt-5">
+                 <h1 class="aboutMe">let me introduce my self</h1>
+                <p class="aboutDetail">Hello, my name is kewal, a self taught frontend developer.</p>
+                <p class="aboutDetail">The scope of  my work is a large part of frontend which includes PSD to HTML, design, coding, coding layouts, single page applications, responsive websites, web apps, CSS/JS animations, and other work based on web development and javascript</p>
+                <p class="aboutDetail">I like to code things for web, and enjoy bringing ideas to life in the browser. I'm always open to adapt to work with team and work on new frontend skills and technology.</p>
+                <div class="hire">
+                    <button class="btn"><a href="#">get cv</a></button>
+                </div>
+                </div>       
+            </div>
+        </div>
+    </div>
+
+        <!--------------------Skills--------------------->
+        
+    <div class="container skills">
+            <h1 class="skillHeading">skills</h1>
+            <div class="underLine"></div>
+        <div class="container myProgress">
+            <h1 class="skillName">html</h1>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progressClr1"></div>
+              </div>
+        </div>
+        <div class="container myProgress">
+            <h1 class="skillName">css</h1>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progressClr2"></div>
+              </div>
+        </div>
+        <div class="container myProgress">
+            <h1 class="skillName">sass</h1>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progressClr3"></div>
+              </div>
+        </div>
+        <div class="container myProgress">
+            <h1 class="skillName">typescript</h1>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progressClr6"></div>
+              </div>
+        </div>
+        <div class="container myProgress">
+            <h1 class="skillName">javascript</h1>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progressClr4"></div>
+              </div>
+        </div>
+        <div class="container myProgress">
+            <h1 class="skillName">react</h1>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped progress-bar-animated progressClr5"></div>
+              </div>
+        </div>
+    </div>
+
+    <!----------------------Project------------------------->
+
+    <div class="container projectPage" id="project">
+        <div class="project">
+            <h1 class="projectHeading">Project</h1>
+            <div class="underLine"></div>
+        </div>
+        <div class="filterBtn">
+            <button class="fBtn" data-id="all">All</button>
+            <button class="fBtn" data-id="website">Website</button>
+            <button class="fBtn" data-id="javascript">Javascript</button>
+            <button class="fBtn" data-id="react">React</button>
+        </div>
+        <div class="container">
+            <div class="row myProject"></div>
+        </div>
+    </div>
+
+    <!-------------------Contact------------------->
+
+    <div class="container contactPage" id="contact">
+        <div class="contact">
+            <h1 class="contactHeading">contact</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="conatct_main">
+            <div class="conatct_info">
+                <i class="fas fa-phone-volume"></i>
+                <strong>8287439127</strong>
+            </div>
+            <div class="conatct_info">
+                <i class="far fa-envelope"></i>
+                <strong>kewalkandpalg@gmail.com</strong>
+            </div>
+            <div class="conatct_info">
+                <i class="fab fa-linkedin-in"></i>
+                <strong><a href="https://www.linkedin.com/in/kewalkandpal" target="blank">linkedin.com/in/kewalkandpal</a></strong>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer page-->
+
+    <div class="footer container">
+        <div class="fooetr_contain">
+        <p class="copy_right">No copyright issues. Feel free to copy.</p>
+        <p class="name">kewal kandpal</p>
+        <div class="footer_link">
+            <p class="link_heading">You can find me</p>
+            <div class="link">
+                <a href="https://www.facebook.com/profile.php?id=100072691008398" target="blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.linkedin.com/in/kewalkandpal" target="blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="fooer_img">
+        <img src="image/footerImg.png" alt="footer_img" title="i love india">
+    </div>
+    </div>
+
+
+    
+    <!-------------------Btn Back To Top----------------->
+
+    <div class="toTop"><i class="fas fa-arrow-up faTop"></i></div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
