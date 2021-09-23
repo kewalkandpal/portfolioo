@@ -34,21 +34,15 @@ const data = [
     },
     {
         logo:"image/react.png",
-        proName:"React website",
-        link:"https://kewalkandpal.github.io/carpoint/",
-        category:"website"
+        proName:"Amazon Clone",
+        link:"https://kewalkandpal.github.io/amazonclone/",
+        category:"react"
     },
     {
         logo:"image/js.png",
         proName:"Corona Status Live (API)",
         link:"https://kewalkandpal.github.io/covidupdate/",
         category:"javascript"
-    },
-    {
-        logo:"image/react.png",
-        proName:"Shoping Cart",
-        link:" https://kewalkandpal.github.io/shopingpoint/",
-        category:"react"
     },
     {
         logo:"image/react.png",
@@ -65,7 +59,7 @@ const fBtn = document.querySelectorAll(".fBtn");
 
 function filterCard(data){
     let myCard = data.map((val)=>{
-        const {id,logo,proName,link,category} = val;
+        const {logo,proName,link} = val;
         return`
         <div class="col-lg-4 col-md-6 col-12 g-5">
         <div class="card">
