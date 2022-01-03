@@ -273,7 +273,7 @@ nav > #day_night{
 }
 
 .about{
-    margin-top: 7rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
     width:100%;
     text-transform: uppercase;
@@ -349,23 +349,16 @@ nav > #day_night{
     background-color:var(--underLine);
     margin-bottom: 8rem;
 }
-.myProgress{
-    height:auto;
-    margin-top: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 .skillName{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color:var(--txtClr);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
+    margin-left: 10px;
 }
 .progress{
-    width:60%;
+    width:93%;
     height:2.5rem !important;
     border-radius: 2rem !important;
     background-color: var(--progBar) !important;
@@ -437,7 +430,7 @@ nav > #day_night{
     background-color:var(--underLine);
 }
 .filterBtn{
-    margin-top: 8rem;
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,7 +455,7 @@ nav > #day_night{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem !important;
+    margin-top: 2.8rem !important;
 }
 .card{
     background-color: transparent;
@@ -529,7 +522,11 @@ nav > #day_night{
 
 .contactPage{
     height:auto;
-    margin-top: 10rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .contactPage .contact{
     margin-top: 10rem;
@@ -550,61 +547,71 @@ nav > #day_night{
     height:0.3rem;
     background-color:var(--underLine);
 }
-.conatct_main{
-    width:100%;
-    height:auto;
+.contact_center{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_group{
+    position: relative;
+    width:320px;
     padding: 10px;
+}
+.form_label{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.form_int{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--txtClr);
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 18px;
+    width:100%;
+    color: var(--txtClr);
+}
+.fmsg{
+    height: 43px;
+}
+.form_int:focus ~ .form_label, .form_int:valid ~ .form_label{
+    letter-spacing: 1px;
+    top:-25px;
+    left: 2px;
+    color: var(--navClr);
+}
+.fbtn{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-    overflow: hidden;
 }
-.conatct_info{
-    width: 100%;
-    min-width: 100px;
-    height: 200px;
-    border-radius: 999px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid var(--navClr);
-    transform: scale(0.9);
-    transition: 0.2s ease-in-out;
-}
-.conatct_info:hover{
-    transform: scale(1);
-}
-.conatct_info > .fas, .conatct_info > .far, .conatct_info > .fab{
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-.conatct_info > .fas{
-    color:rgb(64, 238, 64);
-}
-.conatct_info > .far{
-    color: rgb(247, 247, 92);
-}
-.conatct_info > .fab{
-    color:rgb(116, 116, 245);
-}
-.conatct_info > strong{
+.btn{
+    margin-top: 2rem;
+    padding:10px 25px;
     color:var(--btnclr);
-    font-size: 1.7em;
-    letter-spacing: 3px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    transition: 0.5s;
+    border:1px solid var(--btnclr);
 }
-.conatct_info > strong > a{
-    color:var(--btnclr);
-    text-decoration: none;
+.btn:hover{
+    border:1px solid var( --btnHover);
+    color:var( --btnHover);
 }
 
 /* Footer page */
 
 .footer{
     width:100%;
-    margin-top: 7rem;
+    margin-top: 9rem;
     border-top: 2px solid var(--underLine);
 }
 .fooetr_contain{
@@ -718,15 +725,7 @@ nav > #day_night{
     }
     .toggel_nav_btn{
         display: block;
-    }
-
-    /* Contact page */
-    .conatct_main{
-        flex-direction: column;
-    }
-    .conatct_info{
-      height: 100px;
-    }
+    } 
 
     /* Footer page */
 
@@ -774,6 +773,11 @@ nav > #day_night{
     }
     .landImg img{
         width:300px;
+    }
+
+    /** Contact page**/
+    .form_group{
+        width: 100%;
     }
 
 }
