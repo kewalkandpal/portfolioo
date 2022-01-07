@@ -6,6 +6,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-padding-top: 16rem;
 }
 
 ::-webkit-scrollbar{
@@ -39,6 +40,7 @@ html{
     --navBg:#eee;
     --navShadow:0 0 0.5rem 0.2rem rgba(0, 0, 0, 0.692);
     --navClr:rgb(6, 96, 156);
+    --navHover:rgb(85, 186, 253);
     --txtClr:black;
     --btnclr:black;
     --btnHover:rgb(51, 162, 236);
@@ -98,7 +100,7 @@ ul{
 ul li{
     list-style: none;
     display: inline-block;
-    line-height: 9rem;
+    line-height: 10rem;
     margin-left: 2rem;
 }
 ul li a{
@@ -127,15 +129,15 @@ ul li a::before{
 ul li a:hover::before{
     width:100%;
 }
-nav > #day_night{
+nav > .day_night{
     float: right;
-    line-height: 9rem;
+    line-height: 10rem;
     margin-right: 8rem;
     color:yellow;
     font-size: 2rem;
     cursor: pointer;
 }
-#day_night.dayNight{
+.day_night .dark_mood.darkThem{
     color: black;
 }
 
@@ -146,8 +148,8 @@ nav > #day_night{
 }
 .toggel_nav_btn > .fas{
     color:rgb(116, 195, 248);
-    font-size: 2.9rem;
-    line-height: 9rem;
+    font-size: 2.8rem;
+    line-height: 10rem;
     cursor: pointer;
     animation: navToggle 1s linear infinite;
 }
@@ -229,7 +231,7 @@ nav > #day_night{
     letter-spacing: 0.4rem;
 }
 .hire{
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,11 +272,9 @@ nav > #day_night{
 .aboutPage{
     width:100%;
     height:auto;
+    margin-top: 6rem;
 }
-
 .about{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     width:100%;
     text-transform: uppercase;
 }
@@ -330,6 +330,7 @@ nav > #day_night{
 /******************* Skill **************************/
 
 .skills{
+    width:100%;
     height:auto;
     margin-top: 10rem;
 }
@@ -410,9 +411,9 @@ nav > #day_night{
 .projectPage{
     width:100%;
     height:auto;
+    margin-top: 10rem;
 }
 .project{
-    margin-top: 10rem;
     width:100%;
     text-transform: uppercase;
 }
@@ -430,7 +431,7 @@ nav > #day_night{
     background-color:var(--underLine);
 }
 .filterBtn{
-    margin-top: 6rem;
+    margin-top: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -455,7 +456,7 @@ nav > #day_night{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.8rem !important;
+    margin-top: 2.3rem !important;
 }
 .card{
     background-color: transparent;
@@ -521,15 +522,15 @@ nav > #day_night{
 /********************* Contact *******************/
 
 .contactPage{
+    width:100%;
     height:auto;
-    margin-top: 5rem;
+    margin-top: 9rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .contactPage .contact{
-    margin-top: 10rem;
     width:100%;
     text-transform: uppercase;
 }

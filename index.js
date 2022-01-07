@@ -10,18 +10,21 @@ document.addEventListener("scroll",()=>{
 
 const btn = document.querySelector(".toggel_nav_btn");
 const ul = document.querySelector("ul");
+const toggel_btn = document.querySelector(".toggel_btn");
 
 btn.addEventListener("click",()=>{
     ul.classList.toggle("active");
+    toggel_btn.classList.toggle("fa-times");
 });
 
 ////////////// dayNight mood ///////////////////
-const day_night = document.querySelector("#day_night");
+
+const day_night = document.querySelector(".day_night");
+const darkmood = document.querySelector(".dark_mood");
 function change(){
     document.body.classList.toggle("lightMood");
-    day_night.classList.toggle("dayNight");
-}
-
+    darkmood.classList.toggle("darkThem");
+};
 
 /////////////// Project data ////////////////////
 
@@ -52,7 +55,6 @@ const data = [
     }
 
 ];
-
 
 const myProject = document.querySelector(".myProject");
 const fBtn = document.querySelectorAll(".fBtn");
