@@ -1,6 +1,15 @@
+
+const nav = document.querySelector("#nav");
+const day_night = document.querySelector("#day_night");
+const logo = document.querySelector("#logo");
+const btn = document.querySelector("#toggel_nav_btn");
+const ul = document.querySelector("ul");
+const toggel_btn = document.querySelector("#toggel_btn");
+const darkmood = document.querySelector(".dark_mood");
+
+
 ///////////// Navbar Bg Change ////////////////
 
-const nav = document.querySelector("nav");
 document.addEventListener("scroll",()=>{
     let scrolltop = window.scrollY;
     scrolltop > 100 ? nav.classList.add("navChange") : nav.classList.remove("navChange");
@@ -8,19 +17,20 @@ document.addEventListener("scroll",()=>{
 
 ///////////// Navbar toggel ///////////////////// 
 
-const btn = document.querySelector(".toggel_nav_btn");
-const ul = document.querySelector("ul");
-const toggel_btn = document.querySelector(".toggel_btn");
-
 btn.addEventListener("click",()=>{
     ul.classList.toggle("active");
     toggel_btn.classList.toggle("fa-times");
 });
 
+document.addEventListener("click",(e)=>{
+    if(e.target.id !== "nav" && e.target.id !== "btn" && e.target.id !== "day_night" && e.target.id !== "logo" && e.target.id !== "toggel_btn"){
+        ul.classList.remove("active");
+        toggel_btn.classList.remove("fa-times");
+    }
+})
+
 ////////////// dayNight mood ///////////////////
 
-const day_night = document.querySelector(".day_night");
-const darkmood = document.querySelector(".dark_mood");
 function change(){
     document.body.classList.toggle("lightMood");
     darkmood.classList.toggle("darkThem");

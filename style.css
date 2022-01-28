@@ -34,6 +34,8 @@ html{
     --scrlBgClr:black;
     --scrlClr:white;
     --bgClr:black;
+    --activeNavBf:white;
+    --navActiveclr:black;
 }
 
 .lightMood{
@@ -53,6 +55,8 @@ html{
     --scrlClr:black;
     --proBtn:black;
     --bgClr:#eee;
+    --activeNavBf:black;
+    --navActiveclr:white;
 }
 body{
     scroll-behavior: smooth;
@@ -63,25 +67,25 @@ body{
 
 /************************ Navbar ******************/
 
-nav{
+#nav{
     width:100%;
     height:10rem;
     position: fixed;
     transition: 0.3s linear;
     user-select: none;
 }
-nav.navChange{
+#nav.navChange{
     background-color: var(--navBg);
     box-shadow: var(--navShadow);
     z-index: 1;
 }
-.logo{
+#logo{
     float: left;
     line-height: 10rem;
     margin-left: 15rem;
     cursor: pointer;   
 }
-.logo a{
+#logo a{
     text-decoration: none;
     color:var(--navClr);
     font-size: 3rem;
@@ -89,7 +93,7 @@ nav.navChange{
     letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
-.logo:hover a{
+#logo:hover a{
   color:var(--navHover);
 }
 ul{
@@ -129,24 +133,24 @@ ul li a::before{
 ul li a:hover::before{
     width:100%;
 }
-nav > .day_night{
+#nav > #day_night{
     float: right;
-    line-height: 10rem;
+    line-height: 9.8rem;
     margin-right: 8rem;
     color:yellow;
     font-size: 2rem;
     cursor: pointer;
 }
-.day_night .dark_mood.darkThem{
+#day_night .dark_mood.darkThem{
     color: black;
 }
 
-.toggel_nav_btn{
+#toggel_nav_btn{
     float: right;
     margin-right:2rem;
     display: none;
 }
-.toggel_nav_btn > .fas{
+#toggel_nav_btn > .fas{
     color:rgb(116, 195, 248);
     font-size: 2.8rem;
     line-height: 10rem;
@@ -699,7 +703,7 @@ nav > .day_night{
 
       /************ Navbar ***********/
 
-    .logo{
+    #logo{
         margin-left: 5rem;    
     }
     ul{
@@ -709,7 +713,7 @@ nav > .day_night{
        right:0%;
        width:0%;
        height:auto;
-       background-color: rgba(0, 0, 0, 0.5);
+       background-color: var(--activeNavBf);
        transition: 0.5s;
        z-index: 1;
     }
@@ -724,8 +728,18 @@ nav > .day_night{
         text-align: center;
         margin-left: 0;
     }
-    .toggel_nav_btn{
+    ul li a{
+        color:var(--navActiveclr);
+    }
+    ul li a:hover{
+        color:var(--navClr);
+    }
+    ul li a::before{
+        background-color:var(--navClr);
+    }
+    #toggel_nav_btn{
         display: block;
+        margin-top: 1.5px;
     } 
 
     /* Footer page */
@@ -741,7 +755,7 @@ nav > .day_night{
 
     /************ Navbar ***********/
 
-    .logo{
+    #logo{
         margin-left: 2.5rem;    
     }
     ul{
@@ -749,11 +763,25 @@ nav > .day_night{
         height: 100%;
     }
     ul.active{
-        width:35%;
+        width:100%;
+        background-color:var(--activeNavBf);
     }
     ul li{
         line-height: 4rem;
         margin-left: 0;
+    }
+    ul li a{
+        color:var(--navActiveclr);
+    }
+    ul li a:hover{
+        color:var(--navClr);
+    }
+    ul li a::before{
+        background-color:var(--navClr);
+    }
+    #nav > #day_night{
+        margin-right: 7rem;
+        line-height: 10rem;
     }
 
      /************ LandingPage ***********/
